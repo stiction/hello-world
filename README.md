@@ -29,3 +29,9 @@ http {
     }
 }
 ```
+
+## Assembly
+
+```bash
+gcc -c hello.S && ld -o hello hello.o
+```
