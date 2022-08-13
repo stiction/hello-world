@@ -11,6 +11,13 @@ php hello.php
 php -d opcache.enable_cli=1 -d opcache.opt_debug_level=0x10000 hello.php
 ```
 
+## PHP FPM
+
+```ini
+ping.path = /hello
+ping.response = hello, world
+```
+
 ## nginx
 
 ```nginx
