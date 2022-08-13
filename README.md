@@ -10,3 +10,15 @@ php hello.php
 #dump opcode
 php -d opcache.enable_cli=1 -d opcache.opt_debug_level=0x10000 hello.php
 ```
+
+## nginx
+
+```nginx
+http {
+    server {
+        location = /hello {
+            return 200 "hello, world";
+        }
+    }
+}
+```
